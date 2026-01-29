@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=68"]         # PEP 660 editable support ke liye naya setuptools
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ai-travel-agent-0.0"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+"langchain==1.2.0",
+"langchain-core==1.2.6",
+"langchain-community==0.4.1",
+"langchain-groq==1.1.1",
+"langchain-text-splitters==1.1.0",
+"streamlit==1.52.2",
+"python-dotenv==1.2.1",
+"setuptools==80.9.0",
+"pillow==12.1.0",
+"langchain-tavily",
+"ipykernel"
+]
+
+# Optional: authors, license
+authors = [{ name = "Shankar Viswanath" }]
+license = { text = "Proprietary" }
+
+# Optional: CLI command (python -m pip install -e . ke baad yeh create hoga)
+[project.scripts]
+travel_agent = "AI_TRAVEL_AGENT.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["src*"]
