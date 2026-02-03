@@ -28,7 +28,7 @@ agent = create_agent(
     model=model,
     tools=[tavily_search_tool, google_serper_search_tool],
     system_prompt=SYSTEM_PROMPT.strip(),
-    verbose=True
+    
 )
 
 logger.info("TRAVEL AGENT INITIALIZED") 

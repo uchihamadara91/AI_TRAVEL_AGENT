@@ -31,5 +31,5 @@ license = { text = "Proprietary" }
 travel_agent = "AI_TRAVEL_AGENT.cli:main"
 
 [tool.setuptools.packages.find]
-where = ["src"]
+where = ["."]
 include = ["src*"]
