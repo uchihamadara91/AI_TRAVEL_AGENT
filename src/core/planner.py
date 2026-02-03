@@ -1,7 +1,7 @@
 from langchain_core.messages import HumanMessage, AIMessage
-from agents.travel_agent import agent
-from utils.custom_exception import CustomException
-from utils.logger import get_logger
+from src.agents.travel_agent import agent
+from src.utils.custom_exception import CustomException
+from src.utils.logger import get_logger
 
 logger = get_logger(__name__)
 
