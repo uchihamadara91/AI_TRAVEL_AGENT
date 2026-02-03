@@ -3,7 +3,7 @@ requires = ["setuptools>=68"]         # PEP 660 editable support ke liye naya se
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "ai-travel-agent-0.0"
+name = "ai-travel-agent"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
@@ -31,5 +31,5 @@ license = { text = "Proprietary" }
 travel_agent = "AI_TRAVEL_AGENT.cli:main"
 
 [tool.setuptools.packages.find]
-where = ["."]
+where = ["src"]
 include = ["src*"]
